@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Services({ openAppointment }) {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState(0);
 
   const services = [
     {
@@ -105,7 +105,7 @@ export default function Services({ openAppointment }) {
               className={`modern-service-card ${
                 active === index ? "active" : ""
               }`}
-              onClick={() => setActive(active === index ? null : index)}
+              onClick={() => setActive(index)}
               initial={{ opacity: 0, x: 80, scale: 0.96 }}
               whileInView={{ opacity: 1, x: 0, scale: 1 }}
               transition={{
