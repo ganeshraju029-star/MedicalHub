@@ -2,36 +2,24 @@ import { motion } from "framer-motion";
 
 const equipments = [
   {
-    name: "Physiotherapy Equipment",
-    desc: "Advanced rehabilitation machines supporting recovery, mobility restoration, and muscle strengthening.",
-    icon: (
-      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
-        <path d="M6 20v-2a6 6 0 0 1 12 0v2"/>
-        <path d="M3 20h18"/>
-      </svg>
-    ),
+    name: "BTL",
+    desc: "BTL is a leading rehabilitation device offering electrotherapy, laser therapy, and shockwave treatment to accelerate tissue healing, reduce pain, and improve muscle function.",
+    img: "/BTL.png",
   },
   {
-    name: "Diagnostic Imaging",
-    desc: "High-precision imaging systems for accurate diagnosis, nerve assessment, and clinical evaluations.",
-    icon: (
-      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2"/>
-        <path d="M8 21h8M12 17v4"/>
-        <path d="M7 8h10M7 12h6"/>
-      </svg>
-    ),
+    name: "TENS Ultrasound",
+    desc: "Combines Transcutaneous Electrical Nerve Stimulation with therapeutic ultrasound to provide deep tissue pain relief, reduce inflammation, and promote faster recovery.",
+    img: "/TENS Ultrasound.png",
   },
   {
-    name: "Home Care Devices",
-    desc: "Portable medical equipment enabling professional-grade healthcare monitoring and therapy at home.",
-    icon: (
-      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-        <polyline points="9 22 9 12 15 12 15 22"/>
-      </svg>
-    ),
+    name: "Comba",
+    desc: "The Comba unit delivers combination therapy using ultrasound and electrotherapy simultaneously, enhancing treatment efficiency for musculoskeletal and soft tissue conditions.",
+    img: "/Comba.png",
+  },
+  {
+    name: "Rehes",
+    desc: "Rehes is an advanced rehabilitation system designed for neuromuscular re-education, strength training, and post-surgical recovery with precision-controlled resistance.",
+    img: "/Rehes.png",
   },
 ];
 
@@ -72,7 +60,7 @@ export default function MedicalEquipment() {
               viewport={{ once: true }}
             >
               <div className="equipment-image">
-                <div className="equipment-icon">{item.icon}</div>
+                <img src={item.img} alt={item.name} />
               </div>
 
               <div className="equipment-content">
