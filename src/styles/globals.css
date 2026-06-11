@@ -709,6 +709,126 @@ body {
   transform: translateY(-4px);
 }
 
+/* MEDICAL EQUIPMENT SECTION */
+
+.equipment-section {
+  width: 100%;
+  background: #eef4fb;
+  padding: 90px;
+}
+
+.equipment-container {
+  width: 100%;
+}
+
+.equipment-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  margin-bottom: 45px;
+}
+
+.equipment-label {
+  display: inline-block;
+  background: rgba(244, 196, 48, 0.18);
+  color: var(--navy);
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.equipment-top h2 {
+  font-size: 48px;
+  line-height: 1;
+  color: var(--navy);
+  letter-spacing: -1.8px;
+  font-weight: 900;
+}
+
+.equipment-top p {
+  max-width: 430px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.equipment-card {
+  min-height: 420px;
+  background: linear-gradient(180deg, #d8fff4, #bff7eb);
+  border-radius: 28px;
+  padding: 22px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 22px 60px rgba(7, 47, 95, 0.1);
+  border: 1px solid rgba(7, 47, 95, 0.08);
+  transition: all 0.45s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 85px rgba(7, 47, 95, 0.18);
+}
+
+.equipment-image {
+  height: 230px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.42);
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.equipment-image img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.6s ease;
+}
+
+.equipment-card:hover .equipment-image img {
+  transform: scale(1.08);
+}
+
+.equipment-content h3 {
+  font-size: 21px;
+  line-height: 1.25;
+  color: var(--navy);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.equipment-content p {
+  color: #35535e;
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 280px;
+}
+
+.equipment-content button {
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.equipment-content button span {
+  margin-left: 6px;
+  font-size: 18px;
+}
+
 /* HOW IT WORKS PREMIUM */
 
 .how-premium {
@@ -2040,6 +2160,32 @@ button:hover {
 
   .service-points {
     grid-template-columns: 1fr;
+  }
+
+  .equipment-section {
+   padding: 55px 28px;
+  }
+
+  .equipment-top {
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 22px;
+  }
+
+  .equipment-top h2 {
+   font-size: 38px;
+  }
+
+  .equipment-grid {
+   grid-template-columns: 1fr;
+  }
+
+  .equipment-card {
+   min-height: 390px;
+  }
+
+  .equipment-image {
+   height: 210px;
   }
 
   .how-premium {

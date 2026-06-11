@@ -13,6 +13,7 @@ import Footer from "../Components/Footer";
 import InfoModal from "../Components/InfoModal";
 import AppointmentModal from "../Components/AppointmentModal";
 import SupportCard from "../Components/SupportCard";
+import MedicalEquipment from "../components/MedicalEquipment";
 
 export default function Home() {
   const [activeInfo, setActiveInfo] = useState(null);
@@ -41,6 +42,7 @@ export default function Home() {
         <Hero openInfo={openInfo} openAppointment={openAppointment} />
         <About openInfo={openInfo} />
         <Services openInfo={openInfo} openAppointment={openAppointment} />
+        <MedicalEquipment />
         <HowItWorks openAppointment={openAppointment} />
         <Doctors openInfo={openInfo} openAppointment={openAppointment} />
         <Marquee />
