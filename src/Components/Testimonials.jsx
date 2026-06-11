@@ -29,7 +29,7 @@ export default function Testimonials() {
       <div className="section-pill">Testimonials</div>
 
       <h2 className="section-title">
-        Thousands trust Dr. Jeelan&apos;s Hub.
+        Thousands trust Dr. Jeelan&apos;s Medical Hub.
       </h2>
 
       <div className="testimonial-grid">

@@ -1289,15 +1289,22 @@ body {
 }
 
 .footer-social a {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 8px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   color: #d9e1d6;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-social a svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .footer-social a:hover {

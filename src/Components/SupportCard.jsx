@@ -18,8 +18,8 @@ export default function SupportCard() {
         <div className="support-info">
           <Headphones size={22} />
           <div>
-            <strong>Hotline:</strong>
-            <p>+91 63040 82935</p>
+            <strong>Phone:</strong>
+            <p>+91 94944 03103</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ export default function SupportCard() {
           <MessageCircle size={22} />
           <div>
             <strong>SMS / WhatsApp</strong>
-            <p>+91 63040 82935</p>
+            <p>+91 94944 03103</p>
           </div>
         </div>
 
