@@ -1,24 +1,41 @@
 import { motion } from "framer-motion";
 
-export default function MedicalEquipment() {
-  const equipments = [
-    {
-      name: "Machine Name One",
-      desc: "Advanced medical equipment for accurate diagnosis and patient care.",
-      img: "/equipment/equipment-1.png",
-    },
-    {
-      name: "Machine Name Two",
-      desc: "Modern healthcare technology designed for safe and reliable treatment.",
-      img: "/equipment/equipment-2.png",
-    },
-    {
-      name: "Machine Name Three",
-      desc: "High-quality medical system supporting professional clinical services.",
-      img: "/equipment/equipment-3.png",
-    },
-  ];
+const equipments = [
+  {
+    name: "Physiotherapy Equipment",
+    desc: "Advanced rehabilitation machines supporting recovery, mobility restoration, and muscle strengthening.",
+    icon: (
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
+        <path d="M6 20v-2a6 6 0 0 1 12 0v2"/>
+        <path d="M3 20h18"/>
+      </svg>
+    ),
+  },
+  {
+    name: "Diagnostic Imaging",
+    desc: "High-precision imaging systems for accurate diagnosis, nerve assessment, and clinical evaluations.",
+    icon: (
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2"/>
+        <path d="M8 21h8M12 17v4"/>
+        <path d="M7 8h10M7 12h6"/>
+      </svg>
+    ),
+  },
+  {
+    name: "Home Care Devices",
+    desc: "Portable medical equipment enabling professional-grade healthcare monitoring and therapy at home.",
+    icon: (
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    ),
+  },
+];
 
+export default function MedicalEquipment() {
   return (
     <section className="equipment-section" id="equipment">
       <div className="equipment-container">
@@ -30,8 +47,8 @@ export default function MedicalEquipment() {
           viewport={{ once: true }}
         >
           <div>
-            <span className="equipment-label">Technology</span>
-            <h2>Medical equipment</h2>
+            <div className="section-pill">Equipment</div>
+            <h2>Medical Equipment</h2>
           </div>
 
           <p>
@@ -55,16 +72,12 @@ export default function MedicalEquipment() {
               viewport={{ once: true }}
             >
               <div className="equipment-image">
-                <img src={item.img} alt={item.name} />
+                <div className="equipment-icon">{item.icon}</div>
               </div>
 
               <div className="equipment-content">
                 <h3>{item.name}</h3>
                 <p>{item.desc}</p>
-
-                <button type="button">
-                  Read more <span>›</span>
-                </button>
               </div>
             </motion.div>
           ))}
