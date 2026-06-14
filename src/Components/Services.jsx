@@ -4,23 +4,23 @@ export default function Services() {
   const services = [
     {
       title: "Physiotherapy & Rehabilitation",
-      image: "/services/physiotherapy.png",
+      image: "/Services/physiotherapy.png",
     },
     {
       title: "Pain Management",
-      image: "/services/pain-management.png",
+      image: "/Services/pain-management.png",
     },
     {
       title: "Home Healthcare Services",
-      image: "/services/home-healthcare.png",
+      image: "/Services/home-healthcare.png",
     },
     {
       title: "Surgical Recovery Care",
-      image: "/services/surgical-recovery.png",
+      image: "/Services/surgical-recovery.png",
     },
     {
       title: "Specialized Care Programs",
-      image: "/services/specialized-care.png",
+      image: "/Services/specialized-care.png",
     },
   ];
 
