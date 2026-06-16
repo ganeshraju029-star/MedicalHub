@@ -61,8 +61,13 @@ export default function Hero({ openAppointment }) {
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <button className="primary-btn" onClick={openAppointment}>
-            Book Appointment
+          <button
+          className="primary-btn"
+          onClick={() => {
+          window.location.href = "tel:+919494403103";
+        }}
+        >
+           Book Appointment
           </button>
 
           <button className="secondary-btn" onClick={scrollToServices}>
